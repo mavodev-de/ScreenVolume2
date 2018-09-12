@@ -20,7 +20,7 @@
 		F0445D41200282E60025AE82 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0445D43200282E60025AE82 /* Main.storyboard */; };
 		F0445D4D200294AB0025AE82 /* ButtonCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0445D4C200294AB0025AE82 /* ButtonCellView.swift */; };
 		F06792EA200A73460066C438 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06792E9200A73460066C438 /* AppDelegate.swift */; };
-		F06792F6200A745F0066C438 /* MonitorControlHelper.app in [Login] Copy Helper to start at Login */ = {isa = PBXBuildFile; fileRef = F06792E7200A73460066C438 /* MonitorControlHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		F06792F6200A745F0066C438 /* ScreenVolumeHelper.app in [Login] Copy Helper to start at Login */ = {isa = PBXBuildFile; fileRef = F06792E7200A73460066C438 /* ScreenVolumeHelper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F091C9B31F6EA6110096FD65 /* SliderHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F091C9B21F6EA6110096FD65 /* SliderHandler.swift */; };
 		F091C9B81F6EA79B0096FD65 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F091C9B71F6EA79B0096FD65 /* Utils.swift */; };
 		F0A987E81F77B40E009B603D /* OSD.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F0A987D61F77B290009B603D /* OSD.framework */; };
@@ -34,7 +34,7 @@
 			dstPath = Contents/Library/LoginItems;
 			dstSubfolderSpec = 1;
 			files = (
-				F06792F6200A745F0066C438 /* MonitorControlHelper.app in [Login] Copy Helper to start at Login */,
+				F06792F6200A745F0066C438 /* ScreenVolumeHelper.app in [Login] Copy Helper to start at Login */,
 			);
 			name = "[Login] Copy Helper to start at Login";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -51,7 +51,7 @@
 		55359E361E2737EC002671BC /* ddcctl.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = ddcctl.sh; sourceTree = "<group>"; };
 		55359E371E2737EC002671BC /* Makefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 		55359E381E2737EC002671BC /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		56754EAB1D9A4016007BCDC5 /* MonitorControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		56754EAB1D9A4016007BCDC5 /* ScreenVolume.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenVolume.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		56754EAE1D9A4016007BCDC5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; lineEnding = 0; path = AppDelegate.swift; sourceTree = "<group>"; };
 		56754EB01D9A4016007BCDC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		56754EB31D9A4016007BCDC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
@@ -66,7 +66,7 @@
 		F0445D49200285690025AE82 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		F0445D4B2002856C0025AE82 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/MainMenu.strings; sourceTree = "<group>"; };
 		F0445D4C200294AB0025AE82 /* ButtonCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCellView.swift; sourceTree = "<group>"; };
-		F06792E7200A73460066C438 /* MonitorControlHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MonitorControlHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F06792E7200A73460066C438 /* ScreenVolumeHelper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ScreenVolumeHelper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F06792E9200A73460066C438 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F06792F0200A73470066C438 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F06792F1200A73470066C438 /* MonitorControlHelper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MonitorControlHelper.entitlements; sourceTree = "<group>"; };
@@ -125,10 +125,10 @@
 		56754EA21D9A4016007BCDC5 = {
 			isa = PBXGroup;
 			children = (
-				56754EAD1D9A4016007BCDC5 /* MonitorControl */,
+				56754EAD1D9A4016007BCDC5 /* ScreenVolume */,
 				F0A987D61F77B290009B603D /* OSD.framework */,
 				55359E321E2737EC002671BC /* ddcctl */,
-				F06792E8200A73460066C438 /* MonitorControlHelper */,
+				F06792E8200A73460066C438 /* ScreenVolumeHelper */,
 				56754EAC1D9A4016007BCDC5 /* Products */,
 				F0A987D71F77B404009B603D /* Frameworks */,
 				EFFC2F3E35BEC9ACFA754137 /* Pods */,
@@ -138,13 +138,13 @@
 		56754EAC1D9A4016007BCDC5 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				56754EAB1D9A4016007BCDC5 /* MonitorControl.app */,
-				F06792E7200A73460066C438 /* MonitorControlHelper.app */,
+				56754EAB1D9A4016007BCDC5 /* ScreenVolume.app */,
+				F06792E7200A73460066C438 /* ScreenVolumeHelper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		56754EAD1D9A4016007BCDC5 /* MonitorControl */ = {
+		56754EAD1D9A4016007BCDC5 /* ScreenVolume */ = {
 			isa = PBXGroup;
 			children = (
 				56754EAE1D9A4016007BCDC5 /* AppDelegate.swift */,
@@ -158,7 +158,7 @@
 				F091C9C11F6EB8660096FD65 /* Localizable.strings */,
 				56754EB51D9A4016007BCDC5 /* Info.plist */,
 			);
-			path = MonitorControl;
+			path = ScreenVolume;
 			sourceTree = "<group>";
 		};
 		EFFC2F3E35BEC9ACFA754137 /* Pods */ = {
@@ -180,14 +180,14 @@
 			path = Prefs;
 			sourceTree = "<group>";
 		};
-		F06792E8200A73460066C438 /* MonitorControlHelper */ = {
+		F06792E8200A73460066C438 /* ScreenVolumeHelper */ = {
 			isa = PBXGroup;
 			children = (
 				F06792E9200A73460066C438 /* AppDelegate.swift */,
 				F06792F0200A73470066C438 /* Info.plist */,
 				F06792F1200A73470066C438 /* MonitorControlHelper.entitlements */,
 			);
-			path = MonitorControlHelper;
+			path = ScreenVolumeHelper;
 			sourceTree = "<group>";
 		};
 		F091C9B41F6EA6180096FD65 /* Objects */ = {
@@ -236,9 +236,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		56754EAA1D9A4016007BCDC5 /* MonitorControl */ = {
+		56754EAA1D9A4016007BCDC5 /* ScreenVolume */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 56754EB81D9A4016007BCDC5 /* Build configuration list for PBXNativeTarget "MonitorControl" */;
+			buildConfigurationList = 56754EB81D9A4016007BCDC5 /* Build configuration list for PBXNativeTarget "ScreenVolume" */;
 			buildPhases = (
 				C0EF20D28FC7408CBE89A686 /* [CP] Check Pods Manifest.lock */,
 				F03A8DF01FFB9D4C0034DC27 /* [Lint] Run SwiftLint */,
@@ -252,14 +252,14 @@
 			);
 			dependencies = (
 			);
-			name = MonitorControl;
+			name = ScreenVolume;
 			productName = MonitorControl.OSX;
-			productReference = 56754EAB1D9A4016007BCDC5 /* MonitorControl.app */;
+			productReference = 56754EAB1D9A4016007BCDC5 /* ScreenVolume.app */;
 			productType = "com.apple.product-type.application";
 		};
-		F06792E6200A73460066C438 /* MonitorControlHelper */ = {
+		F06792E6200A73460066C438 /* ScreenVolumeHelper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F06792F4200A73470066C438 /* Build configuration list for PBXNativeTarget "MonitorControlHelper" */;
+			buildConfigurationList = F06792F4200A73470066C438 /* Build configuration list for PBXNativeTarget "ScreenVolumeHelper" */;
 			buildPhases = (
 				F06792E3200A73460066C438 /* Sources */,
 				F06792E4200A73460066C438 /* Frameworks */,
@@ -269,9 +269,9 @@
 			);
 			dependencies = (
 			);
-			name = MonitorControlHelper;
+			name = ScreenVolumeHelper;
 			productName = MonitorControlHelper;
-			productReference = F06792E7200A73460066C438 /* MonitorControlHelper.app */;
+			productReference = F06792E7200A73460066C438 /* ScreenVolumeHelper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -286,18 +286,18 @@
 				TargetAttributes = {
 					56754EAA1D9A4016007BCDC5 = {
 						CreatedOnToolsVersion = 8.0;
-						DevelopmentTeam = KGY56RWR9A;
+						DevelopmentTeam = G6KWXDQ3W6;
 						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					F06792E6200A73460066C438 = {
 						CreatedOnToolsVersion = 9.2;
-						DevelopmentTeam = KGY56RWR9A;
+						DevelopmentTeam = G6KWXDQ3W6;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 56754EA61D9A4016007BCDC5 /* Build configuration list for PBXProject "MonitorControl" */;
+			buildConfigurationList = 56754EA61D9A4016007BCDC5 /* Build configuration list for PBXProject "ScreenVolume" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -311,8 +311,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				56754EAA1D9A4016007BCDC5 /* MonitorControl */,
-				F06792E6200A73460066C438 /* MonitorControlHelper */,
+				56754EAA1D9A4016007BCDC5 /* ScreenVolume */,
+				F06792E6200A73460066C438 /* ScreenVolumeHelper */,
 			);
 		};
 /* End PBXProject section */
@@ -600,13 +600,13 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KGY56RWR9A;
-				INFOPLIST_FILE = "$(SRCROOT)/MonitorControl/Info.plist";
+				DEVELOPMENT_TEAM = G6KWXDQ3W6;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenVolume/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.guillaumeb.MonitorControl;
+				PRODUCT_BUNDLE_IDENTIFIER = "mavodev-de.ScreenVolume";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MonitorControl/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenVolume/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
@@ -619,13 +619,13 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KGY56RWR9A;
-				INFOPLIST_FILE = "$(SRCROOT)/MonitorControl/Info.plist";
+				DEVELOPMENT_TEAM = G6KWXDQ3W6;
+				INFOPLIST_FILE = "$(SRCROOT)/ScreenVolume/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = me.guillaumeb.MonitorControl;
+				PRODUCT_BUNDLE_IDENTIFIER = "mavodev-de.ScreenVolume";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_OBJC_BRIDGING_HEADER = "MonitorControl/Bridging-Header.h";
+				SWIFT_OBJC_BRIDGING_HEADER = "ScreenVolume/Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
@@ -637,17 +637,18 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MonitorControlHelper/MonitorControlHelper.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScreenVolumeHelper/MonitorControlHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KGY56RWR9A;
+				DEVELOPMENT_TEAM = G6KWXDQ3W6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MonitorControlHelper/Info.plist;
+				INFOPLIST_FILE = ScreenVolumeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = me.guillaumeb.MonitorControlHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = "mavodev-de.ScreenVolumeHelper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
@@ -660,17 +661,18 @@
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CODE_SIGN_ENTITLEMENTS = MonitorControlHelper/MonitorControlHelper.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ScreenVolumeHelper/MonitorControlHelper.entitlements;
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = KGY56RWR9A;
+				DEVELOPMENT_TEAM = G6KWXDQ3W6;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
-				INFOPLIST_FILE = MonitorControlHelper/Info.plist;
+				INFOPLIST_FILE = ScreenVolumeHelper/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				PRODUCT_BUNDLE_IDENTIFIER = me.guillaumeb.MonitorControlHelper;
+				PRODUCT_BUNDLE_IDENTIFIER = "mavodev-de.ScreenVolumeHelper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 4.0;
 			};
@@ -679,7 +681,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		56754EA61D9A4016007BCDC5 /* Build configuration list for PBXProject "MonitorControl" */ = {
+		56754EA61D9A4016007BCDC5 /* Build configuration list for PBXProject "ScreenVolume" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56754EB61D9A4016007BCDC5 /* Debug */,
@@ -688,7 +690,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		56754EB81D9A4016007BCDC5 /* Build configuration list for PBXNativeTarget "MonitorControl" */ = {
+		56754EB81D9A4016007BCDC5 /* Build configuration list for PBXNativeTarget "ScreenVolume" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				56754EB91D9A4016007BCDC5 /* Debug */,
@@ -697,7 +699,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F06792F4200A73470066C438 /* Build configuration list for PBXNativeTarget "MonitorControlHelper" */ = {
+		F06792F4200A73470066C438 /* Build configuration list for PBXNativeTarget "ScreenVolumeHelper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F06792F2200A73470066C438 /* Debug */,

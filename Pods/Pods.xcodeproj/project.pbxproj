@@ -1,0 +1,833 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		244B9B71E9669585BC52E3099EA0D020 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBECCFE18EDD999B8FE87D90087C8582 /* Extensions.swift */; };
+		254A7ED49B12C3125585EB3918E0FD76 /* MediaKeyTap.swift in Sources */ = {isa = PBXBuildFile; fileRef = 162AB3237FF6903E1E3EF7E5E316244E /* MediaKeyTap.swift */; };
+		29EFDF9F61D52DF7A9C98838B45826A3 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */; };
+		5C1B635203767D810B298A4F6E25AE2D /* MediaKeyTap-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FF3DA596C57285F42AB144B914F3BD8D /* MediaKeyTap-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5E06175142971E6211C27C3FEB3B6E86 /* MASPreferences-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F3FCDECD242F14BC67AF77A58721769D /* MASPreferences-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6541622CBFE219AAC588C4CCA4D293D2 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */; };
+		703B4F2F762BE32DDD3D4754FD8A8419 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 970069E0D3B17147ACBDF09C09E3258E /* CoreGraphics.framework */; };
+		75CCB582D2F88EAD14E51DD589EAA9B2 /* NSEventExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE924F6D64D2854F8AC1EDF3F133418D /* NSEventExtensions.swift */; };
+		764E24FA84E2DFE44C292B5ED0DCE818 /* MASPreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D3A9E72FBAB2C5E2D2431DB9524E1DB /* MASPreferencesWindow.xib */; };
+		77661AC290A4F1F58C3BD4DEF2BE1CFA /* MASPreferences-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 396321317BE19D09F8BBEF327AF4F597 /* MASPreferences-dummy.m */; };
+		845C5F4FD3AB4F550A5D261CB359424A /* MASPreferencesViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 3D8E250053C5D4BA8F4095FD9EA7BCBB /* MASPreferencesViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		883B24564E315F2F77341A9E598A501A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */; };
+		8D055195C63D43287A6AAAF26BC319E9 /* MediaKeyTap-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3EB246DBD58980217E5ECA4DF80A73B3 /* MediaKeyTap-dummy.m */; };
+		A34C143B4A2D706349523C74D7D39A32 /* MASPreferences.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A692C799B17BA7C23D305460B3D0802 /* MASPreferences.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B9693D06B7794A5E260018E823BD0DE8 /* MASPreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CED8DE1CB30C25317C440275B6C5853 /* MASPreferencesWindowController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C14FCE52D543E857217D8211ECD1B7F3 /* Pods-MonitorControl-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EBEDB6CE1BCBAEB21121ADE99FD1FD26 /* Pods-MonitorControl-dummy.m */; };
+		C33CC57E20AE1A0D9490E6A68C925203 /* Pods-MonitorControl-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 18E603072A528B1950FB4D2787C6A007 /* Pods-MonitorControl-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D145E0BB8F1674FB06BC3CF9E8A690D3 /* MediaKeyTapInternals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801D232C0A7857133153023E3FCF9AB4 /* MediaKeyTapInternals.swift */; };
+		E1BBD43A574650B0CD63DCD1FF00FB3E /* MASPreferencesWindowController.h in Headers */ = {isa = PBXBuildFile; fileRef = 27C43622A0F36D3B116F75A15C623E95 /* MASPreferencesWindowController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E7A9DEF2868E0CC78C4ACEE71A394D6C /* MediaApplicationWatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD0F009E3B1D5A67F4BA1F29869B133D /* MediaApplicationWatcher.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		626C82A3B11E5465DEF3E3E319322EAD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 927978025ED8342822E6D02B93E637D6;
+			remoteInfo = MediaKeyTap;
+		};
+		F1E4E36E582FB82540E9B5614637C7E3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 72A9F223943BC4AF6CA4A078E21C74FE;
+			remoteInfo = MASPreferences;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0A13DD2132D9F5F50A06F79769256BCD /* Pods-MonitorControl.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonitorControl.release.xcconfig"; sourceTree = "<group>"; };
+		162AB3237FF6903E1E3EF7E5E316244E /* MediaKeyTap.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaKeyTap.swift; path = MediaKeyTap/MediaKeyTap.swift; sourceTree = "<group>"; };
+		18E603072A528B1950FB4D2787C6A007 /* Pods-MonitorControl-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-MonitorControl-umbrella.h"; sourceTree = "<group>"; };
+		1A0F80DCA895B1674C462AF2568DEC1F /* MediaKeyTap-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MediaKeyTap-prefix.pch"; sourceTree = "<group>"; };
+		1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/Cocoa.framework; sourceTree = DEVELOPER_DIR; };
+		27C43622A0F36D3B116F75A15C623E95 /* MASPreferencesWindowController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferencesWindowController.h; path = Framework/MASPreferencesWindowController.h; sourceTree = "<group>"; };
+		2A692C799B17BA7C23D305460B3D0802 /* MASPreferences.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferences.h; path = Framework/MASPreferences.h; sourceTree = "<group>"; };
+		3900D0A9FD27BDE0CED3CD3761FBA41C /* MASPreferencesWindow.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = MASPreferencesWindow.xib; path = en.lproj/MASPreferencesWindow.xib; sourceTree = "<group>"; };
+		396321317BE19D09F8BBEF327AF4F597 /* MASPreferences-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MASPreferences-dummy.m"; sourceTree = "<group>"; };
+		3D7FC70ED8132DAB04E129FC09C1AC05 /* Pods-MonitorControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonitorControl.modulemap"; sourceTree = "<group>"; };
+		3D8E250053C5D4BA8F4095FD9EA7BCBB /* MASPreferencesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = Framework/MASPreferencesViewController.h; sourceTree = "<group>"; };
+		3EB246DBD58980217E5ECA4DF80A73B3 /* MediaKeyTap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MediaKeyTap-dummy.m"; sourceTree = "<group>"; };
+		4670D6DC647A02717F086198E11BA73F /* MASPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MASPreferences.framework; path = MASPreferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C5C911D98F97060C2FEF8107D109903 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5CED8DE1CB30C25317C440275B6C5853 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = Framework/MASPreferencesWindowController.m; sourceTree = "<group>"; };
+		61CBC87E4CB1318D601AA1C220E6A733 /* MediaKeyTap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MediaKeyTap.modulemap; sourceTree = "<group>"; };
+		633EEC7C2621B1956B8EC6C9903D17E5 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6895EBC919DFB32AD609739CC9E5EECA /* Pods-MonitorControl-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonitorControl-resources.sh"; sourceTree = "<group>"; };
+		801D232C0A7857133153023E3FCF9AB4 /* MediaKeyTapInternals.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaKeyTapInternals.swift; path = MediaKeyTap/MediaKeyTapInternals.swift; sourceTree = "<group>"; };
+		825067E345FD629D7CB05BBAA6B2528C /* MASPreferences.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MASPreferences.modulemap; sourceTree = "<group>"; };
+		8EE7A1D8753B55A9AC1C089335486858 /* Pods-MonitorControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonitorControl-acknowledgements.plist"; sourceTree = "<group>"; };
+		8F04A9C9FAE5A2997A196CD1CD2B3B49 /* MASPreferences-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASPreferences-prefix.pch"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B3EA4C24EC24C151B25BC5DA5B6A60 /* MediaKeyTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MediaKeyTap.framework; path = MediaKeyTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		970069E0D3B17147ACBDF09C09E3258E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		B7DF1C992A77DBEAAF7984F7FA1E87D6 /* Pods-MonitorControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonitorControl-frameworks.sh"; sourceTree = "<group>"; };
+		BA311ADD1A16E6DB965E0CBA37E6D32C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA6C8444BA931B756781FC6797C73FEE /* Pods_MonitorControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonitorControl.framework; path = "Pods-MonitorControl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C214E37DEC3DC0D2B5393DF07B874691 /* Pods-MonitorControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonitorControl.debug.xcconfig"; sourceTree = "<group>"; };
+		C8822465AF0ACA9AE014ABAC6664A2DD /* MediaKeyTap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MediaKeyTap.xcconfig; sourceTree = "<group>"; };
+		C9F67CD77C36338D8D24C81AF2E0234D /* Pods-MonitorControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonitorControl-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CBECCFE18EDD999B8FE87D90087C8582 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = MediaKeyTap/Extensions.swift; sourceTree = "<group>"; };
+		CD0F009E3B1D5A67F4BA1F29869B133D /* MediaApplicationWatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = MediaApplicationWatcher.swift; path = MediaKeyTap/MediaApplicationWatcher.swift; sourceTree = "<group>"; };
+		D83DFD23C37AE93A33D9B0A861312706 /* MASPreferences.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MASPreferences.xcconfig; sourceTree = "<group>"; };
+		DE924F6D64D2854F8AC1EDF3F133418D /* NSEventExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NSEventExtensions.swift; path = MediaKeyTap/NSEventExtensions.swift; sourceTree = "<group>"; };
+		EBEDB6CE1BCBAEB21121ADE99FD1FD26 /* Pods-MonitorControl-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-MonitorControl-dummy.m"; sourceTree = "<group>"; };
+		F3FCDECD242F14BC67AF77A58721769D /* MASPreferences-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASPreferences-umbrella.h"; sourceTree = "<group>"; };
+		FF3DA596C57285F42AB144B914F3BD8D /* MediaKeyTap-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MediaKeyTap-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3BF611AA59C9CED742896F57E8D56B43 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				883B24564E315F2F77341A9E598A501A /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		85FCBEDAC39F12DC23312AED9C3A7764 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6541622CBFE219AAC588C4CCA4D293D2 /* Cocoa.framework in Frameworks */,
+				703B4F2F762BE32DDD3D4754FD8A8419 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ED6671F2286A95DD0C3656CEE38D86E1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				29EFDF9F61D52DF7A9C98838B45826A3 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03972B7888457FB0F5F9D56280539306 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				84014CB75EC3C4708B9ECA9533E5A9E1 /* MASPreferences */,
+				46D9EC868232DE34EB78FE20295F08AA /* MediaKeyTap */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		46D9EC868232DE34EB78FE20295F08AA /* MediaKeyTap */ = {
+			isa = PBXGroup;
+			children = (
+				CBECCFE18EDD999B8FE87D90087C8582 /* Extensions.swift */,
+				CD0F009E3B1D5A67F4BA1F29869B133D /* MediaApplicationWatcher.swift */,
+				162AB3237FF6903E1E3EF7E5E316244E /* MediaKeyTap.swift */,
+				801D232C0A7857133153023E3FCF9AB4 /* MediaKeyTapInternals.swift */,
+				DE924F6D64D2854F8AC1EDF3F133418D /* NSEventExtensions.swift */,
+				6FCD88987A68CE5911315074AEAA89D0 /* Support Files */,
+			);
+			name = MediaKeyTap;
+			path = MediaKeyTap;
+			sourceTree = "<group>";
+		};
+		6FCD88987A68CE5911315074AEAA89D0 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				633EEC7C2621B1956B8EC6C9903D17E5 /* Info.plist */,
+				61CBC87E4CB1318D601AA1C220E6A733 /* MediaKeyTap.modulemap */,
+				C8822465AF0ACA9AE014ABAC6664A2DD /* MediaKeyTap.xcconfig */,
+				3EB246DBD58980217E5ECA4DF80A73B3 /* MediaKeyTap-dummy.m */,
+				1A0F80DCA895B1674C462AF2568DEC1F /* MediaKeyTap-prefix.pch */,
+				FF3DA596C57285F42AB144B914F3BD8D /* MediaKeyTap-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MediaKeyTap";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */,
+				03972B7888457FB0F5F9D56280539306 /* Pods */,
+				E5A63C53C5217E0487FEF2F342B2D008 /* Products */,
+				934473022573DF1EA896A59CB8C725DA /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8121F389828F26F68F182296A27CF841 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0D3A9E72FBAB2C5E2D2431DB9524E1DB /* MASPreferencesWindow.xib */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		84014CB75EC3C4708B9ECA9533E5A9E1 /* MASPreferences */ = {
+			isa = PBXGroup;
+			children = (
+				2A692C799B17BA7C23D305460B3D0802 /* MASPreferences.h */,
+				3D8E250053C5D4BA8F4095FD9EA7BCBB /* MASPreferencesViewController.h */,
+				27C43622A0F36D3B116F75A15C623E95 /* MASPreferencesWindowController.h */,
+				5CED8DE1CB30C25317C440275B6C5853 /* MASPreferencesWindowController.m */,
+				8121F389828F26F68F182296A27CF841 /* Resources */,
+				CD04D24E529298FB60495FF60A10189C /* Support Files */,
+			);
+			name = MASPreferences;
+			path = MASPreferences;
+			sourceTree = "<group>";
+		};
+		934473022573DF1EA896A59CB8C725DA /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A25374BD532358E81AC1A15BE1EAA0A3 /* Pods-MonitorControl */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		A25374BD532358E81AC1A15BE1EAA0A3 /* Pods-MonitorControl */ = {
+			isa = PBXGroup;
+			children = (
+				4C5C911D98F97060C2FEF8107D109903 /* Info.plist */,
+				3D7FC70ED8132DAB04E129FC09C1AC05 /* Pods-MonitorControl.modulemap */,
+				C9F67CD77C36338D8D24C81AF2E0234D /* Pods-MonitorControl-acknowledgements.markdown */,
+				8EE7A1D8753B55A9AC1C089335486858 /* Pods-MonitorControl-acknowledgements.plist */,
+				EBEDB6CE1BCBAEB21121ADE99FD1FD26 /* Pods-MonitorControl-dummy.m */,
+				B7DF1C992A77DBEAAF7984F7FA1E87D6 /* Pods-MonitorControl-frameworks.sh */,
+				6895EBC919DFB32AD609739CC9E5EECA /* Pods-MonitorControl-resources.sh */,
+				18E603072A528B1950FB4D2787C6A007 /* Pods-MonitorControl-umbrella.h */,
+				C214E37DEC3DC0D2B5393DF07B874691 /* Pods-MonitorControl.debug.xcconfig */,
+				0A13DD2132D9F5F50A06F79769256BCD /* Pods-MonitorControl.release.xcconfig */,
+			);
+			name = "Pods-MonitorControl";
+			path = "Target Support Files/Pods-MonitorControl";
+			sourceTree = "<group>";
+		};
+		BE0A6656BB1E6455FA2ED371851F35AD /* OS X */ = {
+			isa = PBXGroup;
+			children = (
+				1E691107BAA50D8021F6A4D56004C20A /* Cocoa.framework */,
+				970069E0D3B17147ACBDF09C09E3258E /* CoreGraphics.framework */,
+			);
+			name = "OS X";
+			sourceTree = "<group>";
+		};
+		CD04D24E529298FB60495FF60A10189C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BA311ADD1A16E6DB965E0CBA37E6D32C /* Info.plist */,
+				825067E345FD629D7CB05BBAA6B2528C /* MASPreferences.modulemap */,
+				D83DFD23C37AE93A33D9B0A861312706 /* MASPreferences.xcconfig */,
+				396321317BE19D09F8BBEF327AF4F597 /* MASPreferences-dummy.m */,
+				8F04A9C9FAE5A2997A196CD1CD2B3B49 /* MASPreferences-prefix.pch */,
+				F3FCDECD242F14BC67AF77A58721769D /* MASPreferences-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MASPreferences";
+			sourceTree = "<group>";
+		};
+		D648CE86F139C7CCFD55D5B8A03BE74B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BE0A6656BB1E6455FA2ED371851F35AD /* OS X */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E5A63C53C5217E0487FEF2F342B2D008 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4670D6DC647A02717F086198E11BA73F /* MASPreferences.framework */,
+				95B3EA4C24EC24C151B25BC5DA5B6A60 /* MediaKeyTap.framework */,
+				BA6C8444BA931B756781FC6797C73FEE /* Pods_MonitorControl.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		94675719FAFB01D9188E991579ED42C6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C1B635203767D810B298A4F6E25AE2D /* MediaKeyTap-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D6C2913ED9142D6D4736763E94AEFA97 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5E06175142971E6211C27C3FEB3B6E86 /* MASPreferences-umbrella.h in Headers */,
+				A34C143B4A2D706349523C74D7D39A32 /* MASPreferences.h in Headers */,
+				845C5F4FD3AB4F550A5D261CB359424A /* MASPreferencesViewController.h in Headers */,
+				E1BBD43A574650B0CD63DCD1FF00FB3E /* MASPreferencesWindowController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E33454B8BEE546253512437C6DF61A6C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C33CC57E20AE1A0D9490E6A68C925203 /* Pods-MonitorControl-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6D621ED168E1143357169CAC692CE279 /* Pods-MonitorControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 09F24FB5E7F3CC47D450EF8157349CDD /* Build configuration list for PBXNativeTarget "Pods-MonitorControl" */;
+			buildPhases = (
+				E33454B8BEE546253512437C6DF61A6C /* Headers */,
+				B54D26842C5DE3959BFC4FF088C30E7B /* Sources */,
+				ED6671F2286A95DD0C3656CEE38D86E1 /* Frameworks */,
+				F783C2569B8E23BB1D55E25ECD06268D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1191957E2D2FB7E60612036F8CAA62D7 /* PBXTargetDependency */,
+				7D45E5750FDF70B5D3A7AB31DA6E0450 /* PBXTargetDependency */,
+			);
+			name = "Pods-MonitorControl";
+			productName = "Pods-MonitorControl";
+			productReference = BA6C8444BA931B756781FC6797C73FEE /* Pods_MonitorControl.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		72A9F223943BC4AF6CA4A078E21C74FE /* MASPreferences */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 674CB1E6A7BFAC4749824E09D5B308C8 /* Build configuration list for PBXNativeTarget "MASPreferences" */;
+			buildPhases = (
+				D6C2913ED9142D6D4736763E94AEFA97 /* Headers */,
+				F9C71EC4706C3B45E9E45EF65A6BC904 /* Sources */,
+				3BF611AA59C9CED742896F57E8D56B43 /* Frameworks */,
+				DB69AB98E6728ABC29F800B821DA0E92 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MASPreferences;
+			productName = MASPreferences;
+			productReference = 4670D6DC647A02717F086198E11BA73F /* MASPreferences.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		927978025ED8342822E6D02B93E637D6 /* MediaKeyTap */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 48EF53D67AEB16CCDB9FE604F937FAD2 /* Build configuration list for PBXNativeTarget "MediaKeyTap" */;
+			buildPhases = (
+				94675719FAFB01D9188E991579ED42C6 /* Headers */,
+				AFC18007A02062103335F9722440F356 /* Sources */,
+				85FCBEDAC39F12DC23312AED9C3A7764 /* Frameworks */,
+				F94E1BB2D778D80693B9B5FEB3FABDD5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MediaKeyTap;
+			productName = MediaKeyTap;
+			productReference = 95B3EA4C24EC24C151B25BC5DA5B6A60 /* MediaKeyTap.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = E5A63C53C5217E0487FEF2F342B2D008 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				72A9F223943BC4AF6CA4A078E21C74FE /* MASPreferences */,
+				927978025ED8342822E6D02B93E637D6 /* MediaKeyTap */,
+				6D621ED168E1143357169CAC692CE279 /* Pods-MonitorControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DB69AB98E6728ABC29F800B821DA0E92 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				764E24FA84E2DFE44C292B5ED0DCE818 /* MASPreferencesWindow.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F783C2569B8E23BB1D55E25ECD06268D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F94E1BB2D778D80693B9B5FEB3FABDD5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AFC18007A02062103335F9722440F356 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				244B9B71E9669585BC52E3099EA0D020 /* Extensions.swift in Sources */,
+				E7A9DEF2868E0CC78C4ACEE71A394D6C /* MediaApplicationWatcher.swift in Sources */,
+				8D055195C63D43287A6AAAF26BC319E9 /* MediaKeyTap-dummy.m in Sources */,
+				254A7ED49B12C3125585EB3918E0FD76 /* MediaKeyTap.swift in Sources */,
+				D145E0BB8F1674FB06BC3CF9E8A690D3 /* MediaKeyTapInternals.swift in Sources */,
+				75CCB582D2F88EAD14E51DD589EAA9B2 /* NSEventExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B54D26842C5DE3959BFC4FF088C30E7B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C14FCE52D543E857217D8211ECD1B7F3 /* Pods-MonitorControl-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F9C71EC4706C3B45E9E45EF65A6BC904 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				77661AC290A4F1F58C3BD4DEF2BE1CFA /* MASPreferences-dummy.m in Sources */,
+				B9693D06B7794A5E260018E823BD0DE8 /* MASPreferencesWindowController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1191957E2D2FB7E60612036F8CAA62D7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MASPreferences;
+			target = 72A9F223943BC4AF6CA4A078E21C74FE /* MASPreferences */;
+			targetProxy = F1E4E36E582FB82540E9B5614637C7E3 /* PBXContainerItemProxy */;
+		};
+		7D45E5750FDF70B5D3A7AB31DA6E0450 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MediaKeyTap;
+			target = 927978025ED8342822E6D02B93E637D6 /* MediaKeyTap */;
+			targetProxy = 626C82A3B11E5465DEF3E3E319322EAD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D3A9E72FBAB2C5E2D2431DB9524E1DB /* MASPreferencesWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3900D0A9FD27BDE0CED3CD3761FBA41C /* MASPreferencesWindow.xib */,
+			);
+			name = MASPreferencesWindow.xib;
+			path = Framework;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D0ACA257F47E0D6458F3E0150D5B1C8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0A13DD2132D9F5F50A06F79769256BCD /* Pods-MonitorControl.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MonitorControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonitorControl/Pods-MonitorControl.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8181360334D074458DE556DC8CFBE298 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8822465AF0ACA9AE014ABAC6664A2DD /* MediaKeyTap.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/MediaKeyTap/MediaKeyTap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MediaKeyTap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/MediaKeyTap/MediaKeyTap.modulemap";
+				PRODUCT_MODULE_NAME = MediaKeyTap;
+				PRODUCT_NAME = MediaKeyTap;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8C84E7F7B2989A7D11E02935AA521377 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C214E37DEC3DC0D2B5393DF07B874691 /* Pods-MonitorControl.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				INFOPLIST_FILE = "Target Support Files/Pods-MonitorControl/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MODULEMAP_FILE = "Target Support Files/Pods-MonitorControl/Pods-MonitorControl.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8F40EEE69DCAA5C3D6EAC29A3FD83D8D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83DFD23C37AE93A33D9B0A861312706 /* MASPreferences.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/MASPreferences/MASPreferences-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASPreferences/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/MASPreferences/MASPreferences.modulemap";
+				PRODUCT_MODULE_NAME = MASPreferences;
+				PRODUCT_NAME = MASPreferences;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		97B26F869E2D137900E269BEF04EC4F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		982F898C1D78928782BB81D958903CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D83DFD23C37AE93A33D9B0A861312706 /* MASPreferences.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/MASPreferences/MASPreferences-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MASPreferences/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.6;
+				MODULEMAP_FILE = "Target Support Files/MASPreferences/MASPreferences.modulemap";
+				PRODUCT_MODULE_NAME = MASPreferences;
+				PRODUCT_NAME = MASPreferences;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		B3F0EE0353A2C6A55839DBBF4A018C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C8822465AF0ACA9AE014ABAC6664A2DD /* MediaKeyTap.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_VERSION = A;
+				GCC_PREFIX_HEADER = "Target Support Files/MediaKeyTap/MediaKeyTap-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/MediaKeyTap/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MODULEMAP_FILE = "Target Support Files/MediaKeyTap/MediaKeyTap.modulemap";
+				PRODUCT_MODULE_NAME = MediaKeyTap;
+				PRODUCT_NAME = MediaKeyTap;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C7823343FD1834B654E2007B7E71DE51 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_ALLOWED = NO;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		09F24FB5E7F3CC47D450EF8157349CDD /* Build configuration list for PBXNativeTarget "Pods-MonitorControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8C84E7F7B2989A7D11E02935AA521377 /* Debug */,
+				3D0ACA257F47E0D6458F3E0150D5B1C8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				97B26F869E2D137900E269BEF04EC4F0 /* Debug */,
+				C7823343FD1834B654E2007B7E71DE51 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		48EF53D67AEB16CCDB9FE604F937FAD2 /* Build configuration list for PBXNativeTarget "MediaKeyTap" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F0EE0353A2C6A55839DBBF4A018C3C /* Debug */,
+				8181360334D074458DE556DC8CFBE298 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		674CB1E6A7BFAC4749824E09D5B308C8 /* Build configuration list for PBXNativeTarget "MASPreferences" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				982F898C1D78928782BB81D958903CF5 /* Debug */,
+				8F40EEE69DCAA5C3D6EAC29A3FD83D8D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
