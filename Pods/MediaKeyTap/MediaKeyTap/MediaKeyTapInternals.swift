@@ -52,7 +52,7 @@ class MediaKeyTapInternals {
     */
     func enableTap(_ onOff: Bool) {
         if let port = self.keyEventPort, let runLoop = self.runLoop {
-            CFRunLoopPerformBlock(runLoop, CFRunLoopMode.commonModes as CFTypeRef!) {
+            CFRunLoopPerformBlock(runLoop, CFRunLoopMode.commonModes as CFTypeRef?) {
                 CGEvent.tapEnable(tap: port, enable: onOff)
             }
             CFRunLoopWakeUp(runLoop)

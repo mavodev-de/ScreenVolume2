@@ -279,7 +279,11 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
     // See https://github.com/shpakovski/MASPreferences/issues/32 for more info.
     if (![NSViewController instancesRespondToSelector:@selector(viewWillAppear)])
         if ([controller respondsToSelector:@selector(viewWillAppear)])
-            [controller viewWillAppear];
+            if (@available(macOS 10.10, *)) {
+                [controller viewWillAppear];
+            } else {
+                // Fallback on earlier versions
+            }
     
     [self.window setContentView:controllerView];
     [self.window recalculateKeyViewLoop];

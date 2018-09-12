@@ -59,7 +59,7 @@
 		3D7FC70ED8132DAB04E129FC09C1AC05 /* Pods-MonitorControl.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-MonitorControl.modulemap"; sourceTree = "<group>"; };
 		3D8E250053C5D4BA8F4095FD9EA7BCBB /* MASPreferencesViewController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASPreferencesViewController.h; path = Framework/MASPreferencesViewController.h; sourceTree = "<group>"; };
 		3EB246DBD58980217E5ECA4DF80A73B3 /* MediaKeyTap-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MediaKeyTap-dummy.m"; sourceTree = "<group>"; };
-		4670D6DC647A02717F086198E11BA73F /* MASPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MASPreferences.framework; path = MASPreferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4670D6DC647A02717F086198E11BA73F /* MASPreferences.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MASPreferences.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C5C911D98F97060C2FEF8107D109903 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5CED8DE1CB30C25317C440275B6C5853 /* MASPreferencesWindowController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASPreferencesWindowController.m; path = Framework/MASPreferencesWindowController.m; sourceTree = "<group>"; };
 		61CBC87E4CB1318D601AA1C220E6A733 /* MediaKeyTap.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MediaKeyTap.modulemap; sourceTree = "<group>"; };
@@ -69,12 +69,12 @@
 		825067E345FD629D7CB05BBAA6B2528C /* MASPreferences.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = MASPreferences.modulemap; sourceTree = "<group>"; };
 		8EE7A1D8753B55A9AC1C089335486858 /* Pods-MonitorControl-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-MonitorControl-acknowledgements.plist"; sourceTree = "<group>"; };
 		8F04A9C9FAE5A2997A196CD1CD2B3B49 /* MASPreferences-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MASPreferences-prefix.pch"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		95B3EA4C24EC24C151B25BC5DA5B6A60 /* MediaKeyTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = MediaKeyTap.framework; path = MediaKeyTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		95B3EA4C24EC24C151B25BC5DA5B6A60 /* MediaKeyTap.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MediaKeyTap.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		970069E0D3B17147ACBDF09C09E3258E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.13.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
 		B7DF1C992A77DBEAAF7984F7FA1E87D6 /* Pods-MonitorControl-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-MonitorControl-frameworks.sh"; sourceTree = "<group>"; };
 		BA311ADD1A16E6DB965E0CBA37E6D32C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BA6C8444BA931B756781FC6797C73FEE /* Pods_MonitorControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_MonitorControl.framework; path = "Pods-MonitorControl.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BA6C8444BA931B756781FC6797C73FEE /* Pods_MonitorControl.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MonitorControl.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C214E37DEC3DC0D2B5393DF07B874691 /* Pods-MonitorControl.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-MonitorControl.debug.xcconfig"; sourceTree = "<group>"; };
 		C8822465AF0ACA9AE014ABAC6664A2DD /* MediaKeyTap.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MediaKeyTap.xcconfig; sourceTree = "<group>"; };
 		C9F67CD77C36338D8D24C81AF2E0234D /* Pods-MonitorControl-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-MonitorControl-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -135,7 +135,6 @@
 				DE924F6D64D2854F8AC1EDF3F133418D /* NSEventExtensions.swift */,
 				6FCD88987A68CE5911315074AEAA89D0 /* Support Files */,
 			);
-			name = MediaKeyTap;
 			path = MediaKeyTap;
 			sourceTree = "<group>";
 		};
@@ -182,7 +181,6 @@
 				8121F389828F26F68F182296A27CF841 /* Resources */,
 				CD04D24E529298FB60495FF60A10189C /* Support Files */,
 			);
-			name = MASPreferences;
 			path = MASPreferences;
 			sourceTree = "<group>";
 		};
@@ -349,7 +347,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0930;
-				LastUpgradeCheck = 0930;
+				LastUpgradeCheck = 0940;
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -486,8 +484,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
@@ -520,8 +517,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.0;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -784,6 +780,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
