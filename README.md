@@ -1,6 +1,6 @@
 # ScreenVolume2
 
-A simplified version of the0neyouseeks MonitorControl, which is restricted on changing the volume directly of external screens from a menulet or with keyboard native keys. By removing unnecessary polling I archieved a nearly 0 percent CPU usage!
+A simplified version of the0neyouseeks MonitorControl, which is restricted on changing the volume directly of external screens from a menulet or with keyboard native keys. By removing unnecessary polling I achieved a nearly 0 percent CPU usage!
 
 If you need to run the application on startup, please use the manual way (Settings --> Users and Groups)
 
