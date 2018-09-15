@@ -14,7 +14,7 @@ If you need to run the application on startup, please use the manual way (Settin
 ## Download
 
 Precompiled binary, ready to use:
-[Download](application/ScreenVolume2.dmg)
+[Releases](https://github.com/mavodev-de/ScreenVolume2/releases)
 
 ## How to help
 
