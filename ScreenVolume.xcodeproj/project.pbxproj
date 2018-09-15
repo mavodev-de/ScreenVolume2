@@ -203,13 +203,13 @@
 		F0A987D71F77B404009B603D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F0A987D81F77B404009B603D /* MonitorControl */,
+				F0A987D81F77B404009B603D /* ScreenVolume */,
 				398F482D5C8816B29F16AAEB /* Pods_MonitorControl.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F0A987D81F77B404009B603D /* MonitorControl */ = {
+		F0A987D81F77B404009B603D /* ScreenVolume */ = {
 			isa = PBXGroup;
 			children = (
 				F0A987D91F77B404009B603D /* MainMenu.strings */,
@@ -222,7 +222,7 @@
 				F0A987E61F77B404009B603D /* Bridging-Header.h */,
 				F0A987E71F77B404009B603D /* Info.plist */,
 			);
-			path = MonitorControl;
+			path = ScreenVolume;
 			sourceTree = "<group>";
 		};
 		F0A987DE1F77B404009B603D /* Objects */ = {

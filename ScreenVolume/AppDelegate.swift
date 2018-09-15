@@ -31,15 +31,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 	var mediaKeyTap: MediaKeyTap?
 	var prefsController: NSWindowController?
 
-	var keysListenedFor: [MediaKey] = [.brightnessUp, .brightnessDown, .mute, .volumeUp, .volumeDown]
+	var keysListenedFor: [MediaKey] = [.mute, .volumeUp, .volumeDown]
 
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         app = self
 
 		let listenFor = prefs.integer(forKey: Utils.PrefKeys.listenFor.rawValue)
-		if listenFor == Utils.ListenForKeys.brightnessOnlyKeys.rawValue {
-			keysListenedFor.removeSubrange(2...4)
-		} else if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
+		if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
 			keysListenedFor.removeSubrange(0...1)
 		}
 
@@ -47,7 +45,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 		let storyboard: NSStoryboard = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Main"), bundle: Bundle.main)
 		let views = [
 			storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "MainPrefsVC")),
-			storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "KeysPrefsVC")),
+			//storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "KeysPrefsVC")),
 			storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "DisplayPrefsVC"))
 		]
 		prefsController = MASPreferencesWindowController(viewControllers: views, title: NSLocalizedString("Preferences", comment: "Shown in Preferences window"))
@@ -173,20 +171,8 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 																  forDisplay: display,
 																  command: AUDIO_SPEAKER_VOLUME,
 																  title: NSLocalizedString("Volume", comment: "Shown in menu"))
-				let brightnessSliderHandler = Utils.addSliderMenuItem(toMenu: monitorSubMenu,
-																	  forDisplay: display,
-																	  command: BRIGHTNESS,
-																	  title: NSLocalizedString("Brightness", comment: "Shown in menu"))
-				if prefs.bool(forKey: Utils.PrefKeys.showContrast.rawValue) {
-					let contrastSliderHandler = Utils.addSliderMenuItem(toMenu: monitorSubMenu,
-																		forDisplay: display,
-																		command: CONTRAST,
-																		title: NSLocalizedString("Contrast", comment: "Shown in menu"))
-					display.contrastSliderHandler = contrastSliderHandler
-				}
 
 				display.volumeSliderHandler = volumeSliderHandler
-				display.brightnessSliderHandler = brightnessSliderHandler
 				displays.append(display)
 
 				let monitorMenuItem = NSMenuItem()
@@ -209,12 +195,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 		for display in allDisplays {
 			if (prefs.object(forKey: "\(display.identifier)-state") as? Bool) ?? true {
 				switch mediaKey {
-				case .brightnessUp:
-					let value = display.calcNewValue(for: BRIGHTNESS, withRel: +step)
-					display.setBrightness(to: value)
-				case .brightnessDown:
-					let value = currentDisplay.calcNewValue(for: BRIGHTNESS, withRel: -step)
-					display.setBrightness(to: value)
 				case .mute:
 					display.mute()
 				case .volumeUp:
@@ -235,13 +215,11 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 
 	@objc func handleListenForChanged() {
 		let listenFor = prefs.integer(forKey: Utils.PrefKeys.listenFor.rawValue)
-		keysListenedFor = [.brightnessUp, .brightnessDown, .mute, .volumeUp, .volumeDown]
-		if listenFor == Utils.ListenForKeys.brightnessOnlyKeys.rawValue {
-			keysListenedFor.removeSubrange(2...4)
-		} else if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
+		keysListenedFor = [.mute, .volumeUp, .volumeDown]
+		if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
 			keysListenedFor.removeSubrange(0...1)
-		}
-
+        }
+        
 		mediaKeyTap?.stop()
 		mediaKeyTap = MediaKeyTap.init(delegate: self, for: keysListenedFor, observeBuiltIn: false)
 		mediaKeyTap?.start()

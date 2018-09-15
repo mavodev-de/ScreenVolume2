@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13771"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14113"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Main Prefs View Controller-->
         <scene sceneID="Bdy-Ug-m8G">
             <objects>
-                <viewController storyboardIdentifier="MainPrefsVC" id="HNb-aq-vnV" customClass="MainPrefsViewController" customModule="MonitorControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainPrefsVC" id="HNb-aq-vnV" customClass="MainPrefsViewController" customModule="ScreenVolume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="iuQ-z6-BGz">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="161"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -83,25 +83,19 @@
         <!--Keys Prefs View Controller-->
         <scene sceneID="DmR-ia-4qL">
             <objects>
-                <viewController storyboardIdentifier="KeysPrefsVC" id="MHy-Dv-i5A" customClass="KeysPrefsViewController" customModule="MonitorControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="KeysPrefsVC" id="MHy-Dv-i5A" customClass="KeysPrefsViewController" customModule="ScreenVolume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="nfK-n0-xN4">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="98"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <popUpButton verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="fUf-UM-yW3">
-                                <rect key="frame" x="85" y="17" width="196" height="26"/>
-                                <popUpButtonCell key="cell" type="push" title="Both Brightness &amp; Volume" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="Vr4-xb-B4o" id="DkZ-as-YDS">
+                                <rect key="frame" x="85" y="17" width="111" height="26"/>
+                                <popUpButtonCell key="cell" type="push" title="Volume only" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="2" imageScaling="proportionallyDown" inset="2" selectedItem="NLP-dU-Dam" id="DkZ-as-YDS">
                                     <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="menu"/>
                                     <menu key="menu" id="Hqj-cU-ZyP">
                                         <items>
-                                            <menuItem title="Both Brightness &amp; Volume" state="on" id="Vr4-xb-B4o">
-                                                <modifierMask key="keyEquivalentModifierMask"/>
-                                            </menuItem>
-                                            <menuItem title="Brightness only" tag="1" id="hjz-0c-rvK">
-                                                <modifierMask key="keyEquivalentModifierMask"/>
-                                            </menuItem>
-                                            <menuItem title="Volume only" tag="2" id="NLP-dU-Dam">
+                                            <menuItem title="Volume only" state="on" tag="2" id="NLP-dU-Dam">
                                                 <modifierMask key="keyEquivalentModifierMask"/>
                                             </menuItem>
                                         </items>
@@ -151,7 +145,7 @@
         <!--Display Prefs View Controller-->
         <scene sceneID="kdt-oj-Qke">
             <objects>
-                <viewController storyboardIdentifier="DisplayPrefsVC" id="NAx-6T-ZPc" customClass="DisplayPrefsViewController" customModule="MonitorControl" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DisplayPrefsVC" id="NAx-6T-ZPc" customClass="DisplayPrefsViewController" customModule="ScreenVolume" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="EBf-qN-KaN">
                         <rect key="frame" x="0.0" y="0.0" width="400" height="240"/>
                         <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
@@ -186,7 +180,7 @@
                                                     <customCell key="dataCell" alignment="left" id="Dzg-gO-DMd"/>
                                                     <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                     <prototypeCellViews>
-                                                        <tableCellView id="Fzp-05-e2y" customClass="ButtonCellView" customModule="MonitorControl" customModuleProvider="target">
+                                                        <tableCellView id="Fzp-05-e2y" customClass="ButtonCellView" customModule="ScreenVolume" customModuleProvider="target">
                                                             <rect key="frame" x="1" y="1" width="49" height="17"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                             <subviews>
@@ -296,8 +290,8 @@
                                 </tableHeaderView>
                             </scrollView>
                             <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="Y48-gQ-uJi">
-                                <rect key="frame" x="18" y="165" width="275" height="18"/>
-                                <buttonCell key="cell" type="check" title="Change Brightness/Volume for all screens" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0Z7-PQ-Bl8">
+                                <rect key="frame" x="18" y="165" width="206" height="18"/>
+                                <buttonCell key="cell" type="check" title="Change Volume for all screens" bezelStyle="regularSquare" imagePosition="left" inset="2" id="0Z7-PQ-Bl8">
                                     <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>

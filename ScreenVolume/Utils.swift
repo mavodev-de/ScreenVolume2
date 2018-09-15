@@ -50,7 +50,7 @@ class Utils: NSObject {
 	///   - monitor: The id of the monitor to send the command to
 	/// - Returns: the value of the command
 	static func getCommand(_ command: Int32, fromMonitor monitor: CGDirectDisplayID) -> Int? {
-		var readCmd = DDCReadCommand()
+        var readCmd = DDCReadCommand()
 		readCmd.control_id = UInt8(command)
 		readCmd.max_value = 0
 		readCmd.current_value = 0
@@ -113,10 +113,12 @@ class Utils: NSObject {
 			var val: Int?
 
 			for _ in 0...100 {
-				if let res = getCommand(command, fromMonitor: display.identifier) {
+				/*
+                if let res = getCommand(command, fromMonitor: display.identifier) {
 					val = res
 					break
 				}
+                */
 				usleep(40000)
 			}
 
