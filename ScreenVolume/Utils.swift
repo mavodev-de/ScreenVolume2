@@ -110,15 +110,11 @@ class Utils: NSObject {
 		menu.insertItem(NSMenuItem.separator(), at: 1)
 
 		DispatchQueue.global(qos: .background).async {
-			var val: Int?
+			/*
+            var val: Int?
 
 			for _ in 0...100 {
-				/*
-                if let res = getCommand(command, fromMonitor: display.identifier) {
-					val = res
-					break
-				}
-                */
+                // This part has been removed as it caused too much CPU load
 				usleep(40000)
 			}
 
@@ -129,6 +125,7 @@ class Utils: NSObject {
 				 slider.integerValue = val
 				}
 			}
+            */
 		}
 
 		return handler

@@ -89,7 +89,11 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
     NSString *origin = [[NSUserDefaults standardUserDefaults] stringForKey:kMASPreferencesFrameTopLeftKey];
     if (origin)
     {
-        [self.window layoutIfNeeded];
+        if (@available(macOS 10.7, *)) {
+            [self.window layoutIfNeeded];
+        } else {
+            // Fallback on earlier versions
+        }
         [self.window setFrameTopLeftPoint:NSPointFromString(origin)];
     }
 
@@ -218,7 +222,9 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
         // With 10.10 and later AppKit will invoke viewDidDisappear so we need to prevent it from being called twice.
         if (![NSViewController instancesRespondToSelector:@selector(viewDidDisappear)])
             if ([_selectedViewController respondsToSelector:@selector(viewDidDisappear)])
-                [_selectedViewController viewDidDisappear];
+                if (@available(macOS 10.10, *)) {
+                    [_selectedViewController viewDidDisappear];
+                }
         _selectedViewController = nil;
     }
 
@@ -281,9 +287,7 @@ static NSString * PreferencesKeyForViewBounds (NSString *identifier)
         if ([controller respondsToSelector:@selector(viewWillAppear)])
             if (@available(macOS 10.10, *)) {
                 [controller viewWillAppear];
-            } else {
-                // Fallback on earlier versions
-            }
+            } 
     
     [self.window setContentView:controllerView];
     [self.window recalculateKeyViewLoop];
