@@ -244,7 +244,7 @@ class Utils: NSObject {
 		/// Lower contrast after brightness
 		case lowerContrast
 
-		/// Change Brightness/Volume for all screens
+		/// Change Volume for all screens
 		case allScreens
 	}
 

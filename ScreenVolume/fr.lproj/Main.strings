@@ -1,6 +1,6 @@
 
-/* Class = "NSButtonCell"; title = "Change Brightness/Volume for all screens"; ObjectID = "0Z7-PQ-Bl8"; */
-"0Z7-PQ-Bl8.title" = "Modifier Luminosité/Volume pour tout les écrans";
+/* Class = "NSButtonCell"; title = "Change Volume for all screens"; ObjectID = "0Z7-PQ-Bl8"; */
+"0Z7-PQ-Bl8.title" = "Modifier Volume pour tout les écrans";
 
 /* Class = "NSTextFieldCell"; title = "Text Cell"; ObjectID = "2gr-xG-Byx"; */
 "2gr-xG-Byx.title" = "Text Cell";

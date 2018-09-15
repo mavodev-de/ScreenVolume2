@@ -44,7 +44,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 		mediaKeyTap = MediaKeyTap.init(delegate: self, for: keysListenedFor, observeBuiltIn: false)
 		let storyboard: NSStoryboard = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Main"), bundle: Bundle.main)
 		let views = [
-			storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "MainPrefsVC")),
+			//storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "MainPrefsVC")),
 			//storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "KeysPrefsVC")),
 			storyboard.instantiateController(withIdentifier: NSStoryboard.SceneIdentifier(rawValue: "DisplayPrefsVC"))
 		]
@@ -219,7 +219,6 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 		if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
 			keysListenedFor.removeSubrange(0...1)
         }
-        
 		mediaKeyTap?.stop()
 		mediaKeyTap = MediaKeyTap.init(delegate: self, for: keysListenedFor, observeBuiltIn: false)
 		mediaKeyTap?.start()
