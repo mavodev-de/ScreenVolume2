@@ -36,11 +36,12 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         app = self
 
+/*
 		let listenFor = prefs.integer(forKey: Utils.PrefKeys.listenFor.rawValue)
 		if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
 			keysListenedFor.removeSubrange(0...1)
 		}
-
+*/
 		mediaKeyTap = MediaKeyTap.init(delegate: self, for: keysListenedFor, observeBuiltIn: false)
 		let storyboard: NSStoryboard = NSStoryboard.init(name: NSStoryboard.Name(rawValue: "Main"), bundle: Bundle.main)
 		let views = [
@@ -214,11 +215,13 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
 	// MARK: - Prefs notification
 
 	@objc func handleListenForChanged() {
-		let listenFor = prefs.integer(forKey: Utils.PrefKeys.listenFor.rawValue)
+		//let listenFor = prefs.integer(forKey: Utils.PrefKeys.listenFor.rawValue)
 		keysListenedFor = [.mute, .volumeUp, .volumeDown]
+        /*
 		if listenFor == Utils.ListenForKeys.volumeOnlyKeys.rawValue {
 			keysListenedFor.removeSubrange(0...1)
         }
+        */
 		mediaKeyTap?.stop()
 		mediaKeyTap = MediaKeyTap.init(delegate: self, for: keysListenedFor, observeBuiltIn: false)
 		mediaKeyTap?.start()

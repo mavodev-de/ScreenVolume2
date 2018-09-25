@@ -48,13 +48,13 @@ public class MediaKeyTap {
     let keyPressMode: KeyPressMode
 	var observeBuiltIn: Bool = true
 	var keysToWatch: [MediaKey] = [
-		.playPause,
-		.previous,
-		.next,
-		.rewind,
-		.fastForward,
-		.brightnessUp,
-		.brightnessDown,
+		//.playPause,
+		//.previous,
+		//.next,
+		//.rewind,
+		//.fastForward,
+		//.brightnessUp,
+		//.brightnessDown,
 		.volumeUp,
 		.volumeDown,
 		.mute
