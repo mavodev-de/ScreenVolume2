@@ -57,6 +57,17 @@ class Display {
 		saveValue(value, for: AUDIO_SPEAKER_VOLUME)
 	}
 
+    func displayVolume(to value: Int) {
+        if value > 0 {
+            isMuted = false
+        }
+
+        if let slider = volumeSliderHandler?.slider {
+            slider.intValue = Int32(value)
+        }
+        saveValue(value, for: AUDIO_SPEAKER_VOLUME)
+    }
+
 	func setBrightness(to value: Int) {
 		if prefs.bool(forKey: Utils.PrefKeys.lowerContrast.rawValue) {
 			if value == 0 {

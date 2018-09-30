@@ -65,6 +65,18 @@ class AppDelegate: NSObject, NSApplicationDelegate, MediaKeyTapDelegate {
         updateDisplays()
 
 		mediaKeyTap?.start()
+
+        guard let currentDisplay = Utils.getCurrentDisplay(from: displays) else { return }
+        let allDisplays = prefs.bool(forKey: Utils.PrefKeys.allScreens.rawValue) ? displays : [currentDisplay]
+        for display in allDisplays {
+            if (prefs.object(forKey: "\(display.identifier)-state") as? Bool) ?? true {
+
+                let currentvalue = display.calcNewValue(for: AUDIO_SPEAKER_VOLUME, withRel: 0)
+                display.displayVolume(to: currentvalue)
+                //let value2 = display.calcNewValue(for: AUDIO_SPEAKER_VOLUME, withRel: -step)
+                //display.setVolume(to: value2)
+            }
+        }
     }
 
 	func applicationWillTerminate(_ aNotification: Notification) {
